@@ -1,0 +1,64 @@
+
+DeeDee@Ire MINGW64 ~/Desktop/testmd
+$ git init
+Initialized empty Git repository in C:/Users/DeeDee/Desktop/testmd/.git/
+
+DeeDee@Ire MINGW64 ~/Desktop/testmd (master)
+$ git add .
+
+DeeDee@Ire MINGW64 ~/Desktop/testmd (master)
+$ git commit -am 'test'
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'DeeDee@Ire.(none)')
+
+DeeDee@Ire MINGW64 ~/Desktop/testmd (master)
+$
+
+DeeDee@Ire MINGW64 ~/Desktop/testmd (master)
+$  git config --global user.email "femiorunmbe@gmail.com"
+
+DeeDee@Ire MINGW64 ~/Desktop/testmd (master)
+$ ^C
+
+DeeDee@Ire MINGW64 ~/Desktop/testmd (master)
+$ git config --global user.name "Obafemi Seth"
+
+DeeDee@Ire MINGW64 ~/Desktop/testmd (master)
+$ git commit -am 'test'
+[master (root-commit) d71b788] test
+ 1 file changed, 95 insertions(+)
+ create mode 100644 sample.md
+
+DeeDee@Ire MINGW64 ~/Desktop/testmd (master)
+$ git remote add origin https://github.com/femiorunmbe/testmd.git
+
+DeeDee@Ire MINGW64 ~/Desktop/testmd (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/femiorunmbe/testmd.git'
+
+DeeDee@Ire MINGW64 ~/Desktop/testmd (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 849 bytes | 141.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/femiorunmbe/testmd.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+DeeDee@Ire MINGW64 ~/Desktop/testmd (master)
+$
